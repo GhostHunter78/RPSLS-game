@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="rules-page">
+      <p class="rules">RULES</p>
+      <img class="rules-img" src="./assets/image-rules-bonus.svg" />
+      <img class="close-icon" src="./assets/icon-close.svg" />
+    </div>
+    <div class="container">
+      <div class="heading-div">
+        <img class="logo" src="./assets/logo-bonus.svg" />
+        <div class="score-div">
+          <p class="score-word">SCORE</p>
+          <p class="score-number">0</p>
+        </div>
+      </div>
+      <div class="content">
+        <img class="pentagon-img" src="./assets/bg-pentagon.svg" />
+        <img class="icon scissors" src="./assets/icon-scissors.svg" />
+        <div class="spock-and-paper">
+          <img class="icon spock" src="./assets/icon-spock.svg" />
+          <img class="icon paper" src="./assets/icon-paper.svg" />
+        </div>
+        <div class="lizard-and-rock">
+          <img class="icon lizard" src="./assets/icon-lizard.svg" />
+          <img class="icon rock" src="./assets/icon-rock.svg" />
+        </div>
+      </div>
+      <div class="second-page-div"></div>
+      <div class="pre-step2">
+        <div class="your-pick-div">
+          <img class="player-choice" />
+          <p class="you-picked">YOU PICKED</p>
+        </div>
+        <div class="house-pick-div">
+          <img class="computer-choice hidden visible" />
+          <div class="house-icon"></div>
+          <p class="house-picked">THE HOUSE PICKED</p>
+        </div>
+      </div>
+      <div class="result">
+        <p id="result-text" class="hidden"></p>
+        <button id="play-again" class="hidden">PLAY AGAIN</button>
+      </div>
+      <button class="rules-button">RULES</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

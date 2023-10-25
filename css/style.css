@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%
+  );
+}
+
+.heading-div {
+  width: 311px;
+  border-radius: 5px;
+  border: 3px solid rgba(255, 255, 255, 0.29);
+  display: flex;
+  align-items: center;
+  gap: 146px;
+  padding: 24px 12px 24px 24px;
+  margin-top: 32px;
+}
+
+.score-div {
+  width: 80px;
+  border-radius: 4px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #fff 100%);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 24px;
+}
+
+.logo {
+  width: 49px;
+  height: 48px;
+}
+
+.score-word {
+  color: #2a45c2;
+  text-align: center;
+  font-family: Barlow Semi Condensed;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.563px;
+}
+
+.score-number {
+  color: #565468;
+  text-align: center;
+  font-family: Barlow Semi Condensed;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.content {
+  margin-left: 49px;
+}
+
+.pentagon-img {
+  width: 227px;
+  height: 227px;
+  margin-top: 145px;
+  position: absolute;
+  z-index: -1;
+}
+
+.icon {
+  width: 96px;
+  height: 97px;
+}
+
+.scissors {
+  margin-top: 95px;
+  margin-left: 65px;
+}
+
+.spock {
+  margin-left: -50px;
+}
+
+.paper {
+  margin-left: 120px;
+}
+
+.lizard-and-rock {
+  margin-top: 29px;
+  align-items: center;
+  display: flex;
+}
+
+.rock {
+  margin-left: 33px;
+}
+
+.rules-button {
+  width: 128px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-family: Barlow Semi Condensed;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  padding: 11px 36px;
+  background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%
+  );
+  margin-top: 126px;
+  margin-left: 95px;
+  margin-bottom: 56px;
+}
+
+.rules-page {
+  display: none;
+  width: 375px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  align-items: center;
+  padding-top: 95px;
+  padding-bottom: 66px;
+}
+
+.rules {
+  color: #3b4262;
+  font-family: Barlow Semi Condensed;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.rules-img {
+  width: 311px;
+  height: 305px;
+  margin-top: 96px;
+}
+
+.close-icon {
+  margin-top: 137px;
+}
+
+.pre-step2 {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-choice,
+.computer-choice {
+  width: 130px;
+  height: 133px;
+  border: 0;
+  outline: none;
+}
+
+.house-icon {
+  width: 110px;
+  height: 110px;
+  background: black;
+  opacity: 0.2;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.your-pick-div,
+.house-pick-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.you-picked,
+.house-picked {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  font-family: Barlow Semi Condensed;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.875px;
+  margin-top: 17px;
+}
+
+#result-text {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  font-family: Barlow Semi Condensed;
+  font-size: 56px;
+  font-weight: 700;
+  margin-top: 35px;
+}
+
+#play-again {
+  display: none;
+  width: 227px;
+  border-radius: 8px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #fff 100%);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  color: #3b4262;
+  font-family: Barlow Semi Condensed;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  padding: 15px 62px 14px 60px;
+  margin-top: 18px;
+  margin-left: 43px;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
