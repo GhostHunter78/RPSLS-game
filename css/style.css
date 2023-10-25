@@ -229,3 +229,6 @@ body {
   opacity: 1;
   transition: opacity 1s ease-in-out;
 }
+
+@media (min-width: 1440px) {
+}

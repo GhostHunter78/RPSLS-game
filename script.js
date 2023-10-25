@@ -43,7 +43,6 @@ gameIcons.forEach((icon) => {
 
     playerChoice.src = `./assets/icon-${choice}.svg`;
 
-    // Reset result, computer's choice, and "PLAY AGAIN" button to be hidden
     resultText.classList.remove("visible");
     computerChoiceImage.classList.remove("visible");
     playAgainButton.classList.remove("visible");
@@ -63,7 +62,6 @@ gameIcons.forEach((icon) => {
         resultText.textContent = "DRAW";
         playAgainButton.style.display = "block";
         rulesButton.style.marginTop = "52px";
-        scoreNumber.textContent = score;
       } else if (
         (choice === "rock" &&
           (computerChoice === "scissors" || computerChoice === "lizard")) ||
@@ -85,18 +83,18 @@ gameIcons.forEach((icon) => {
         resultText.textContent = "YOU LOSE";
         playAgainButton.style.display = "block";
         rulesButton.style.marginTop = "52px";
-        scoreNumber.textContent = score;
-        score >= 0 ? score : score--;
+        if (score > 0) {
+          score--;
+          scoreNumber.textContent = score;
+        }
       }
 
-      // Set the result, computer's choice, and "PLAY AGAIN" button to be visible with animation
+      // Set the result and "PLAY AGAIN" button to be visible with animation
       resultText.classList.add("visible");
       playAgainButton.classList.add("visible");
     }, 2000);
   });
 });
-
-// Add a click event listener to the "PLAY AGAIN" button to reset the game
 
 // Reset elements and CSS classes
 playAgainButton.addEventListener("click", function () {
@@ -107,5 +105,3 @@ playAgainButton.addEventListener("click", function () {
   houseIcon.style.opacity = 0.2;
   computerChoiceImage.src = "";
 });
-
-// Implement code to reset the game or allow the player to make a new choice
