@@ -18,6 +18,15 @@
       <img class="rules-img" src="./assets/image-rules-bonus.svg" />
       <img class="close-icon" src="./assets/icon-close.svg" />
     </div>
+    <!-- <div class="desktop-rules-div">
+      <div class="rules-page-desktop">
+        <div class="rules-and-closeIcon">
+          <p class="rules">RULES</p>
+          <img class="close-icon-desktop" src="./assets/icon-close.svg" />
+        </div>
+        <img class="rules-img" src="./assets/image-rules-bonus.svg" />
+      </div>
+    </div> -->
     <div class="container">
       <div class="heading-div">
         <img class="logo" src="./assets/logo-bonus.svg" />
@@ -26,37 +35,58 @@
           <p class="score-number">0</p>
         </div>
       </div>
-      <div class="content">
-        <img class="pentagon-img" src="./assets/bg-pentagon.svg" />
-        <img class="icon scissors" src="./assets/icon-scissors.svg" />
-        <div class="spock-and-paper">
-          <img class="icon spock" src="./assets/icon-spock.svg" />
-          <img class="icon paper" src="./assets/icon-paper.svg" />
+      <div class="content-and-rulesButton">
+        <div class="content">
+          <img class="pentagon-img" src="./assets/bg-pentagon.svg" />
+          <img class="icon scissors" src="./assets/icon-scissors.svg" />
+          <div class="spock-and-paper">
+            <img class="icon spock" src="./assets/icon-spock.svg" />
+            <img class="icon paper" src="./assets/icon-paper.svg" />
+          </div>
+          <div class="lizard-and-rock">
+            <img class="icon lizard" src="./assets/icon-lizard.svg" />
+            <img class="icon rock" src="./assets/icon-rock.svg" />
+          </div>
         </div>
-        <div class="lizard-and-rock">
-          <img class="icon lizard" src="./assets/icon-lizard.svg" />
-          <img class="icon rock" src="./assets/icon-rock.svg" />
+        <div class="pre-step2">
+          <div class="your-pick-div">
+            <p class="you-picked-desktop">YOU PICKED</p>
+            <img class="player-choice" />
+            <p class="you-picked">YOU PICKED</p>
+          </div>
+          <div class="result-desktop">
+            <p id="result-text-desktop" class="hidden"></p>
+            <button id="play-again-desktop" class="hidden">PLAY AGAIN</button>
+          </div>
+          <div class="house-pick-div">
+            <p class="house-picked-desktop">THE HOUSE PICKED</p>
+            <img class="computer-choice hidden visible" />
+            <div class="house-icon"></div>
+            <p class="house-picked">THE HOUSE PICKED</p>
+          </div>
+        </div>
+        <div class="result">
+          <p id="result-text" class="hidden"></p>
+          <button id="play-again" class="hidden">PLAY AGAIN</button>
         </div>
       </div>
-      <div class="second-page-div"></div>
-      <div class="pre-step2">
-        <div class="your-pick-div">
-          <img class="player-choice" />
-          <p class="you-picked">YOU PICKED</p>
-        </div>
-        <div class="house-pick-div">
-          <img class="computer-choice hidden visible" />
-          <div class="house-icon"></div>
-          <p class="house-picked">THE HOUSE PICKED</p>
+      <div class="rulesButton-div-desktop">
+        <div class="rules-button-div">
+          <button class="rules-button">RULES</button>
         </div>
       </div>
-      <div class="result">
-        <p id="result-text" class="hidden"></p>
-        <button id="play-again" class="hidden">PLAY AGAIN</button>
-      </div>
-      <button class="rules-button">RULES</button>
     </div>
-
+    <div class="blured-div">
+      <div class="desktop-rules-div">
+        <div class="rules-page-desktop">
+          <div class="rules-and-closeIcon">
+            <p class="rules">RULES</p>
+            <img class="close-icon-desktop" src="./assets/icon-close.svg" />
+          </div>
+          <img class="rules-img" src="./assets/image-rules-bonus.svg" />
+        </div>
+      </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>

@@ -7,14 +7,39 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: radial-gradient(
     134.34% 134.34% at 50% 0%,
     #1f3757 0%,
     #131537 100%
   );
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100vw;
+  margin-top: 32px;
+}
+
+.content-and-rulesButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-desktop,
+.rules-page-desktop {
+  display: none;
+}
+
+.you-picked-desktop,
+.house-picked-desktop {
+  display: none;
+  color: #fff;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  font-family: Barlow Semi Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 3px;
 }
 
 .heading-div {
@@ -23,9 +48,9 @@ body {
   border: 3px solid rgba(255, 255, 255, 0.29);
   display: flex;
   align-items: center;
-  gap: 146px;
+  justify-content: space-between;
   padding: 24px 12px 24px 24px;
-  margin-top: 32px;
+  margin: auto;
 }
 
 .score-div {
@@ -99,6 +124,12 @@ body {
   margin-left: 33px;
 }
 
+.rules-button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .rules-button {
   width: 128px;
   border-radius: 8px;
@@ -116,13 +147,11 @@ body {
     #131537 100%
   );
   margin-top: 126px;
-  margin-left: 95px;
   margin-bottom: 56px;
 }
 
 .rules-page {
   display: none;
-  width: 375px;
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
@@ -130,6 +159,7 @@ body {
   align-items: center;
   padding-top: 95px;
   padding-bottom: 66px;
+  margin: auto;
 }
 
 .rules {
@@ -216,8 +246,7 @@ body {
   font-weight: 600;
   letter-spacing: 2.5px;
   padding: 15px 62px 14px 60px;
-  margin-top: 18px;
-  margin-left: 43px;
+  margin: 18px auto 0px auto;
 }
 
 .hidden {
@@ -231,4 +260,186 @@ body {
 }
 
 @media (min-width: 1440px) {
+  .blured-div {
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  .result {
+    display: none;
+  }
+
+  .result-desktop {
+    display: block;
+    margin-top: 120px;
+  }
+
+  #result-text-desktop {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    font-family: Barlow Semi Condensed;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 40px;
+  }
+
+  #play-again-desktop {
+    display: none;
+    width: 227px;
+    border-radius: 8px;
+    background: linear-gradient(0deg, #f3f3f3 0%, #fff 100%);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    color: #3b4262;
+    font-family: Barlow Semi Condensed;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    padding: 15px 62px 14px 60px;
+    margin-top: 18px;
+    margin-left: 43px;
+    cursor: pointer;
+  }
+
+  .pre-step2 {
+    gap: 78px;
+  }
+
+  .rules-page-desktop {
+    display: none;
+    flex-direction: column;
+    width: 400px;
+    height: 461px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    padding: 32px 37px 47px 45px;
+  }
+
+  .desktop-rules-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 154px auto;
+  }
+
+  .rules-and-closeIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .rules-img {
+    margin-top: 20px;
+  }
+
+  .close-icon {
+    margin-top: 0;
+  }
+
+  .heading-div {
+    width: 700px;
+    justify-content: space-between;
+    padding: 22px 24px 18px 32px;
+    margin: 42px auto;
+  }
+
+  .logo {
+    width: 108.836px;
+    height: 108.076px;
+    cursor: pointer;
+  }
+
+  .score-div {
+    width: 150px;
+    height: 114px;
+    padding: 18px 48px;
+  }
+
+  .score-word {
+    font-size: 20px;
+  }
+
+  .score-number {
+    margin-top: 10px;
+    font-size: 65px;
+  }
+
+  .pentagon-img {
+    width: 345px;
+    height: 345px;
+    margin-top: 123px;
+  }
+
+  .icon {
+    width: 145px;
+    height: 148px;
+    cursor: pointer;
+  }
+
+  .scissors {
+    margin-top: 50px;
+    margin-left: 95px;
+  }
+
+  .spock {
+    margin-left: -75px;
+  }
+
+  .paper {
+    margin-left: 182px;
+  }
+
+  .rock {
+    margin-left: 52px;
+  }
+
+  .player-choice,
+  .computer-choice {
+    width: 293px;
+    height: 287px;
+    margin-top: 63px;
+  }
+
+  .house-icon {
+    width: 225px;
+    height: 225px;
+    margin-top: 120px;
+  }
+
+  .you-picked,
+  .house-picked {
+    display: none;
+  }
+
+  .you-picked-desktop,
+  .house-picked-desktop {
+    display: block;
+  }
+
+  .your-pick-div,
+  .house-pick-div {
+    margin-top: 72px;
+  }
+
+  .rulesButton-div-desktop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 32px;
+  }
+
+  .rules-button {
+    margin-left: auto;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    cursor: pointer;
+  }
 }
